@@ -6,15 +6,22 @@
    Case Problem 1
 
    Rhetoric in the United States Styles for Media
-   Author: 
-   Date:   
+   Author: Samuel Harris
+   Date:   12/11/19
 
    Filename: ws_media.css
 
 */
 
 /* VideoPlayer Styles */
-
+video{
+   display: block;
+   width: 90%;
+   margin-bottom: 5px;
+   margin-top: 5px;
+   margin-left: auto;
+   margin-right: auto;
+}
 
 
 
