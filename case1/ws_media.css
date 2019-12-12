@@ -23,8 +23,18 @@ video{
    margin-right: auto;
 }
 
-
+@media only screen and (min-width: 521px){
+   video{
+      width: 360px;
+      float: right;
+      margin: 10px;
+   }
+}
 
 /* Track Styles */
-
+::cue{
+   font: 1.3em sans-serif;
+   color: rgb(221,128,160);
+   background-color: rgba(255,255,255,0.8);
+}
 
