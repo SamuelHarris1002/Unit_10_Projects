@@ -4,8 +4,8 @@
    Case Problem 2
 
    Big Apple Physics Animation Styles
-   Author: 
-   Date:   
+   Author: Samuel Harris
+   Date:   12/12/19
 
    Filename: ba_animate.css
 
@@ -13,7 +13,10 @@
 
 
 /* Transition Styles */
-
+nav a{
+   display: url(ba_target.png) center no-repeat;
+   size: 0%;
+}
 
 
 /* Animation Styles */
