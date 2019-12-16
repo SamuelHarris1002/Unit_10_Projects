@@ -31,6 +31,7 @@ nav#gameLinks a:hover{
 }
 
 nav#gameLinks a::after{
+   content: "";
    position: absolute;
    top: 100%;
    left: 0px;
@@ -42,7 +43,7 @@ nav#gameLinks a::after{
    transition: width 0.5s, opacity 0.5s;
 }
 
-nav#gamesLinks a:hover::after{
+nav#gameLinks a:hover::after{
    opacity: 1;
    width: 100%;
 }
@@ -55,8 +56,58 @@ div#sprite{
 div#bat{
    width: 40px;
    height: 40px;
-   
+   top: 100px;
+   left: -50px;
+   background: url(paa_bat.png) left center/cover no-repeat;
+   position: absolute;
+}
+
+div#butterfly{
+   width: 35px;
+   height: 35px;
+   top: 60px;
+   left: -50px;
+   background: url(paa_bfly.png) left center/cover no-repeat;
+   position: absolute;
+}
+
+div#fox{
+   width: 280px;
+   height: 260px;
+   bottom: 10px;
+   right: 10px;
+   background: url(paa_fox.png) left center/cover no-repeat;
+   position: absolute;
 }
 
 /* Animation Styles */
+@keyframes playSprite{
+   100%{background: right center;}
+}
+@keyframes flyRight{
+   25%{top: 150px;}
 
+   50%{top: 55px;}
+
+   65%{top: 120px;}
+
+   90%{top: 50px;}
+
+   100%{top: 80px;
+   left: 100%;
+   }
+}
+
+div#fox{
+   animation: playSprite 3.5s 4s steps(27) infinite;
+}
+
+div#bat{
+   animation: playSprite 2s steps(39) infinite;
+   animation: flyRight 8s linear infinite;
+}
+
+div#butterfly{
+   animation: playSprite 1s 3s steps(33) infinite;
+   animation: flyRight 6s cubic-bezier(0,1,0.73,0) infinite;
+}
